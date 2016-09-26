@@ -1,0 +1,66 @@
+
+<div class="index-content">
+    <div>
+        <dl class="kjzx">
+            <dd class="">
+                <div class="kjzx-div1 index-btn-1">
+                    <a href="#"  class="">会计科目</a>
+                </div>
+                <div class="kjzx-div2">
+                    <div class="index-btn-3">
+                        <i class="jiantou"></i>
+                    </div>
+                </div>
+                <div class="kjzx-div3  index-btn-1">
+                    <a class="index-btn-3" href="javascript:goPage('/views/account/addVoucher.html');"><i class="ico-6"></i>新建凭证</a>
+                    <i class="icon-arrow-right"></i>
+                    <a class="index-btn-3" href="javascript:goPage('/views/account/voucherManagement.html');"><i class="ico-7"></i>审核</a>
+                    <i class="icon-arrow-right"></i>
+                    <a class="index-btn-3" href="javascript:goPage('/views/account/accountItemList.html');"><i class="ico-8"></i>结账</a>
+                </div>
+
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <dl class="cwgl">
+            <dd class="half left">
+                <div class="color-1 cwgl-div">
+                    <div class="left no-padding">
+                        <h5>综合分析</h5>
+                        <ul>
+                            <li>收入增长率</li>
+                            <li>净利率增长率</li>
+                            <li>ROE与ROA</li>
+                            <li>... ...</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <div class="cwgl-icon ico-a"></div>
+                    </div>
+                </div>
+            </dd>
+            <dd class="half right">
+                <div class="color-3 cwgl-div">
+                    <div class="left no-padding">
+                        <h5>指标分析</h5>
+                        <ul>
+                            <li>偿债能力</li>
+                            <li>资产运营能力</li>
+                            <li>发展能力指标</li>
+                            <li>... ...</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <div class="cwgl-icon ico-b"></div>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+    </div>
+</div>
+<script>
+    function goPage(url){
+        $('#menu a.ajaxify[href="'+url+'"]').eq(0).click();
+    }
+</script>

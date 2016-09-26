@@ -1,0 +1,1626 @@
+@charset "UTF-8";
+/*凭证*/
+/*新增凭证，表格宽度定义*/
+/*宽度相关*/
+
+input[readonly='readonly']{
+    cursor: pointer;
+}
+
+.mgr-10{
+    margin-right: 10px;
+}
+
+.AddVoucher_cerate {
+    padding: 10px 10px 10px 10px;
+}
+.AddVoucher_cerate form{
+    margin: 0;
+}
+.jzpz-title {
+    margin: auto;
+    padding: 30px 0px 10px 0px;
+    overflow: hidden;
+}
+.jzpz-title >div.right{
+    display: inline-block;
+    position: absolute;
+    margin-left: -200px;
+    width: 200px;
+}
+.jzpz {
+    display: inline-block;
+    margin-top: -10px;
+    width: 100%;
+    font-size: 22px;
+    color: rgb(86, 86, 86);
+}
+/*表格*/
+.kj_form { /* max-width: 1000px; */
+    margin: 0 auto; /* padding: 0 31px; */
+    position: relative;
+    /*background: #ffffff; /!* border: 1px solid #ddd; *!/ /!* box-shadow: 0px 0px 2px 2px #e3e3e3; *!/*/
+}
+.jrf .rq input {
+    width: 168px;
+
+}
+.jrf {
+    color: rgb(153,153,153);
+    font-size: 13px;
+    padding: 10px 0 5px 200px;
+    position: relative;
+}
+
+.jrf .add-row{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+}
+
+.jrf input {
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #000;
+    height: 25px;
+    line-height: 20px;
+    text-align: right;
+}
+.jrf input.input-mini {
+    max-width: 45px;
+}
+
+.jrf .rq span {
+    border: 1px solid #ccc;
+    display: inline-block;
+    border-radius: 4px  ;
+    position: relative;
+    cursor: pointer;
+}
+
+.jrf .rq span i { /* padding: 7px 4px; */
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 1;
+}
+
+.jrf .rq input {
+    line-height: normal;
+    border: none;
+    color: #000;
+    background-color: rgba(255,255,255,0)  ;
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+}
+
+.jrf .rq input:read-only{
+    cursor: pointer;
+}
+
+.jrf .rq input:disabled{
+    cursor: not-allowed;
+}
+
+
+.jrf .msg-info {
+    text-align: center;
+    width: 25%;
+    color: #e28000;
+    padding: 2px 0px 0px 0px;
+    font-size: 14px;
+}
+
+
+.jrf .pull-right{
+    text-align: right;
+}
+
+.jrf .pull-right > div{
+    padding:5px 0 0 30px;
+    display: inline-block;
+}
+
+.jrf .fjs {
+    text-align: left;
+    /*width: 100px;*/
+    float: left;
+    position: relative;
+    margin-left: 122px;
+}
+
+.jrf select{
+    width: auto;
+    padding: 0 6px;
+    height: 25px;
+}
+
+/*-----------------------------------添加凭证table的各种样式*/
+
+
+.voucher [class*="span"]{
+    float: none;
+    margin: 0;
+}
+
+.voucher {
+    width: 100%;
+    /* border-collapse: collapse;  margin: auto; */
+    border-collapse: inherit;
+    border: 1px solid ;
+    border-color: #DCDCDC;
+    border-width: 1px 2px ;
+    table-layout:fixed;
+    word-break:break-all;
+}
+    /*table基础设置*/
+.table-responsive tbody tr:hover {
+    background: #dff0d8;
+}
+.voucher th{
+    padding: 0;
+}
+.voucher td {
+    height: 50px;
+}
+.voucher tbody > tr:first-child td:nth-child(3) {
+    border-top: none  ;
+}
+
+.voucher th {
+    border: none;
+    border-left: 2px solid #DEDEDE;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.voucher th:first-child {
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.voucher td {
+    border: none;
+}
+
+.voucher tbody > tr > td {
+    border-left: 2px solid #DEDEDE;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.voucher tbody > tr > td:first-child {
+    border-left: none;
+}
+
+.voucher tfoot > tr > td {
+    border-left: 2px solid #DEDEDE;
+}
+
+.voucher tfoot > tr > td:first-child {
+    border-left: none;
+}
+
+.voucher tbody > tr > td:last-child {
+    position: relative;
+}
+
+.voucher tbody > tr > td:first-child {
+    position: relative;
+}
+
+.voucher tbody > tr > td:last-child .cell-wrap {
+}
+
+.voucher tbody > tr > td:first-child span {
+}
+
+.voucher tbody > tr > td:first-child .summary_val {
+}
+
+.cell-wrap {
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.voucher .col_num{
+    width: 50px;
+}
+
+.voucher .col_subject{
+    width: 50%;
+    min-width: 120px;
+}
+
+.voucher .col_summary{
+    width: 50%;
+    min-width: 120px;
+}
+
+.voucher .col_debite,
+.voucher .col_credit{
+    width: 181px;
+}
+
+.voucher .col_func{
+    width: 120px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.voucher .col_num{
+    text-align: center;
+}
+
+.voucher .col_summary .cell-wrap,
+.voucher .col_subject .cell-wrap {
+    text-align: left;
+}
+
+.voucher .col_summary .cell-wrap {
+    font-size: 12px;
+}
+
+
+.col_subject .cell-wrap {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.sh_people {
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    text-align: right;
+}
+
+.sh_people span {
+    color: #000;
+}
+
+.voucher .tit {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+}
+
+/*借贷金额*/
+
+.voucher td.col_debite, .voucher td.col_credit{
+    text-align: right;
+}
+
+.voucher .col_debite .cell-wrap, .voucher .col_credit .cell-wrap {
+    margin-right: -1px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding: 0 10px;
+}
+
+.voucher th {
+    height: 48px;
+    color: #555555;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.voucher .extra_item td,
+.voucher-manage .extra_item td{
+    height: 24px;
+    color: #555;
+    background: #FFFAD4;
+}
+
+.voucher .extra_item span,
+.voucher-manage  .extra_item span{
+    padding: 0 15px;
+    display: inline-block;
+}
+/*-----------------------------------凭证管理table的各种样式*/
+
+.voucher-manage{
+    table-layout:fixed;
+    font-size: 12px;
+}
+
+.voucher-manage th,
+.voucher-manage td{
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.voucher-manage td{
+    padding: 5px 10px;
+}
+
+/*鼠标悬停样式设置*/
+.voucher-manage tbody tr.success td{
+    background: #E0EADC;
+}
+.voucher-manage tbody tr.success:hover>td {
+    background-color: #CCD8C7;
+}
+.voucher-manage tbody tr.error td{
+    background: #EEDFDF;
+}
+.voucher-manage tbody tr.error:hover>td {
+    background-color: #E4A5A5;
+}
+.voucher-manage tbody tr.info td{
+    background: #D5DFE4;
+}
+.voucher-manage tbody tr.info:hover>td {
+    background-color: #BFD0D8;
+}
+.voucher-manage tbody tr.warning td{
+    background: #EFF9C0;
+}
+.voucher-manage tbody tr.warning:hover>td {
+    background-color: #E6EDA5;
+}/*悬停样式结束*/
+
+
+
+.voucher-manage thead th{
+    background: #ECECEC;
+}
+
+.voucher-manage .extra_item td{
+    text-align: left;
+}
+
+.voucher-manage .vou-num{
+    width: 98px;
+    min-width: 98px;
+}
+.voucher-manage .status{
+    width: 80px;
+    min-width: 80px;
+}
+.voucher-manage .date-create,
+.voucher-manage .date-post,
+.voucher-manage .date{
+    width: 86px;
+    min-width: 86px;
+}
+.voucher-manage .line-num{
+    width: 50px;
+    min-width: 50px;
+}
+.voucher-manage .summary,
+.voucher-manage .subject{
+    width: 50%;
+    min-width: 120px;
+}
+
+
+.voucher-manage .debite,
+.voucher-manage .credit{
+    width: 128px;
+    min-width: 128px;
+}
+
+.voucher-manage .person-create,
+.voucher-manage .person-post{
+    width: 76px;
+    min-width: 76px;
+}
+
+.voucher-manage .opertator{
+    width: 112px;
+    min-width: 112px;
+}
+
+.voucher-manage td.summary{
+    line-height: 16px;
+}
+.voucher-manage tbody .summary,
+.voucher-manage tbody .subject{
+    text-align: left;
+}
+.voucher-manage tbody .debite,
+.voucher-manage tbody .credit{
+    text-align: right;
+}
+
+.voucher-manage .orderid,
+.voucher-manage .address,
+.voucher-manage .deign-block,
+.voucher-manage .deign-dept,
+.voucher-manage .designer,
+.voucher-manage .sell-block,
+.voucher-manage .sell-dept,
+.voucher-manage .seller,
+.voucher-manage .project-dept,
+.voucher-manage .supervisor,
+.voucher-manage .worker,
+.voucher-manage .func-dept,
+.voucher-manage .staff,
+.voucher-manage .material-dept,
+.voucher-manage .materialid,
+.voucher-manage .supplier{
+    width: 80px;
+    min-width: 80px;
+    color: #2C6146;
+}
+
+.voucher-manage  td.address{
+    width: 120px;
+    min-width: 120px;
+    text-align: left;
+    line-height: 16px;
+}
+
+
+.voucher-manage .rest{
+    width: 132px;
+    min-width: 132px;
+    overflow: hidden;
+}
+
+.voucher-manage .rest span:first-child{
+    float: left;
+}
+.voucher-manage .rest span:last-child{
+    float: right;
+}
+
+.voucher-manage .extra_item td{
+    padding: 0;
+}
+.voucher-manage tbody > tr.headline td{
+    background: #F9E9F9;
+    font-size: 14px;
+}
+
+/*明细账table的特殊设置*/
+.voucher-manage.crowded .vou-num{
+    width: 106px;
+    min-width: 106px;
+}
+/*---------------USED*/
+
+
+
+
+
+
+.u78 {
+    position: absolute;
+    right: -38px;
+    top: 2px;
+    display: none;
+    font-size: 22px;
+}
+/*增减行*/
+.operate {
+    visibility: hidden;
+    width: 26px;
+}
+
+.voucher .col_operate {
+    text-align: center;
+    width: 26px;
+    border: none;
+    border-right: 1px solid #ccc;
+}
+
+    .voucher .col_operate a {
+        display: block;
+        width: 16px;
+        height: 16px;
+        background: url('img/page_spr_icons.png') no-repeat -112px -96px;
+        vertical-align: middle;
+    }
+
+        .voucher .col_operate a:hover {
+            background-position: -112px -112px;
+        }
+
+    .voucher .col_operate .del {
+        margin-top: 5px;
+        background-position: -128px -96px;
+    }
+
+        .voucher .col_operate .del:hover {
+            background-position: -128px -112px;
+        }
+
+
+
+
+
+
+.edit_summary, .edit_money, .edit_subject {
+    outline: none;
+    resize: none;
+    padding: 4px;
+    overflow: hidden;
+}
+/*摘要*/
+.col_summary .cell-wrap {
+    /*width: 240px;*/
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.edit_summary {
+    font-size: 14px;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    padding:0px;
+    height:50px;
+    margin: auto;
+    border: 2px solid #00B2FF  ;
+}
+
+.voucher tbody .col_summary {
+    border-right: 0;
+}
+
+/*科目*/
+
+.st-accountType {
+    margin-left: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.subjectMoney{
+    padding: 0 5px;
+}
+
+
+
+.edit_subject {
+    width: 293px;
+    padding-right: 26px;
+    margin-right: -30px;
+    font-size: 14px;
+    position: relative;
+}
+/*科目余额*/
+.col_option .option {
+    visibility: hidden;
+    position: relative;
+    width: 30px;
+}
+
+.voucher .col_option {
+    border-left: 0;
+}
+
+.voucher .col_option {
+    width: 30px;
+    text-align: center;
+}
+
+    .voucher .col_option a:hover {
+        color: #555;
+    }
+
+#selSub, #selSubModify {
+    margin-bottom: 10px;
+    position: absolute;
+    right: 0px;
+}
+
+.col_option .option .selSub, .col_option .option .selSummary, .col_option .option .balance {
+    display: block;
+    width: 24px;
+    height: 26px;
+    cursor: pointer;
+    color: #aaa;
+    text-align: center;
+    line-height: 26px;
+    margin: 0 auto;
+}
+
+.col_option .option .balance {
+    border-top: 1px solid #cbe1ed;
+}
+
+.col_option .show {
+    visibility: visible;
+}
+
+    .col_option .show .selSub {
+        display: block;
+    }
+
+    .col_option .show .balance {
+        display: block;
+    }
+
+
+.money-negative {
+    color: #dd4e4e;
+}
+
+.edit_money {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    width: 208px;
+    text-align: right;
+    overflow: hidden;
+    ime-mode: disabled;
+}
+
+#isItem {
+    position: absolute;
+    z-index: 101;
+    background: #f4f4f4;
+    width: 321px;
+    border: 2px solid #4BB8F3;
+    border-top: none;
+}
+
+    #isItem ul {
+        padding: 10px;
+    }
+
+    #isItem li {
+        overflow: hidden;
+        *zoom: 1;
+        margin-bottom: 10px;
+        vertical-align: middle;
+    }
+
+    #isItem label {
+        display: inline-block;
+        width: 70px;
+        vertical-align: middle;
+    }
+
+    #isItem input {
+        width: 190px;
+    }
+
+.voucher th.col_quantity, .voucher th.col_currency {
+    font-size: 14px;
+}
+/*有外币*/
+.has-currency .voucher_wrap { /*padding: 20px 28px 20px 38px;  width: 1080px; */
+}
+
+.has-currency #isItem {
+    width: 291px;
+}
+
+    .has-currency #isItem input {
+        width: 172px;
+    }
+
+.curr_val {
+    width: 104px;
+    color: #aaa;
+    padding: 0 3px;
+}
+
+.has-currency .col_currency {
+    display: table-cell;
+    *display: inline;
+    visibility: visible;
+    font-size: 12px;
+}
+
+.curr_val .mb8 {
+    margin-bottom: 3px;
+}
+
+.curr_val .ui-combo-wrap {
+    height: 22px;
+    margin-right: 3px;
+}
+
+    .curr_val .ui-combo-wrap .trigger {
+        background-position: 0 -18px;
+    }
+
+    .curr_val .ui-combo-wrap .input-txt {
+        width: 33px;
+        height: 14px;
+        padding: 4px 2px;
+    }
+
+.curr_val select {
+}
+
+.rate, .original {
+    width: 48px;
+    height: 14px;
+    padding: 0px 2px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.original {
+    width: 70px;
+}
+
+/*有数量金额*/
+.has-amount .voucher_wrap {
+}
+
+.has-amount #isItem {
+    width: 291px;
+}
+
+    .has-amount #isItem input {
+        width: 172px;
+    }
+
+.quantity_val {
+    width: 104px;
+    color: #aaa;
+    padding: 2px 5px;
+    text-align: left;
+    font-size: 12px; /* max-height:50px; */
+}
+
+.has-amount .col_quantity {
+    display: table-cell;
+    *display: inline;
+    visibility: visible;
+    font-size: 12px;
+}
+
+.quantity_val .mb8 {
+    margin-bottom: 1px;
+}
+
+.quantity, .unit-price {
+    width: 54px;
+    height: 14px;
+    padding: 0 2px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.unit-price {
+    width: 55px;
+    font-size: 10px;
+}
+
+.has-amount .col_summary .cell-wrap {
+    width: 160px;
+}
+
+.has-amount .edit_summary {
+    width: 163px;
+}
+
+.has-amount .col_subject .cell-wrap {
+    width: 255px;
+}
+
+.has-amount .edit_subject {
+    width: 262px;
+}
+/*所有情况*/
+.has-whole #voucher {
+    table-layout: fixed;
+    *table-layout: auto;
+}
+/*.has-whole .voucher_wrap{ padding: 15px 20px 15px 28px;  width: 1088px; }*/
+
+.has-whole .voucher td.col_debite,
+.has-whole .voucher td.col_credit,
+.has-whole .voucher td.col_money,
+.has-whole .money_unit {
+    background-image: url(money_rp.png);
+}
+
+.has-whole .voucher .col_debite .cell-wrap, .has-whole .voucher .col_credit .cell-wrap {
+    width: 165px;
+    right: -3px;
+    *right: 4px;
+    letter-spacing: 6px;
+}
+
+.voucher tbody tr.current {
+    background: #f8f8f8;
+}
+
+    .voucher tbody tr.current .col_operate {
+        background-color: #fff;
+    }
+
+    .voucher tbody tr.current .operate {
+        visibility: visible;
+    }
+
+    .voucher tbody tr.current .option {
+        visibility: visible;
+    }
+
+.voucher .col_total {
+    padding: 0 10px;
+}
+
+.voucher .col_total {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.vch_ft {
+    font-size: 14px;
+}
+
+.ui-input-dis {
+    background-color: #f0f0f0;
+    color: #aaa;
+}
+
+/* 跳转按钮 */
+.ui-btn-menu .goto-btn {
+    padding-right: 13px;
+}
+
+.ui-btn-menu .goto-con {
+    left: auto;
+    right: 0;
+    padding: 15px;
+    width: 360px;
+}
+
+    .ui-btn-menu .goto-con .hd {
+        width: 100%;
+        text-align: right;
+    }
+
+        .ui-btn-menu .goto-con .hd .txt {
+            display: inline-block;
+            font-size: 12px;
+            line-height: 30px;
+            vertical-align: middle;
+        }
+
+        .ui-btn-menu .goto-con .hd .num {
+            margin-right: 0;
+        }
+
+    .ui-btn-menu .goto-con .ft {
+        padding: 20px 0 0;
+        zoom: 1;
+        text-align: right;
+    }
+
+#skip-btn {
+    margin-right: 0;
+}
+
+#skip-period-select {
+    width: 20px;
+}
+
+.has-audit, .has-checkout {
+    width: 150px;
+    height: 74px;
+    background: url(img/audit.png) 0 0 no-repeat;
+    position: absolute;
+    right: 170px;
+    top: 0px;
+}
+
+.has-checkout {
+    background: url(img/checkout.png) 0 0 no-repeat;
+}
+
+/*余额弹出*/
+.balance-pop {
+    position: absolute;
+    z-index: 1001;
+    width: 130px;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #555;
+    border: 1px solid #4bb7f3;
+    box-shadow: 0 0 3px rgba(0,162,255,0.4);
+}
+
+    .balance-pop .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+        text-indent: -9999px;
+        background: url('img/page_spr_icons.png') no-repeat -160px -96px;
+    }
+
+.check-balance {
+    color: #3ab2f4;
+    text-align: center;
+}
+
+    .check-balance strong {
+        float: left;
+    }
+
+    .check-balance a {
+        float: right;
+        display: inline;
+        margin-right: 5px;
+        color: #aaa;
+    }
+
+        .check-balance a:hover {
+            color: #555;
+        }
+
+.balance-pop b {
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    margin-left: -3px;
+    display: block;
+    height: 7px;
+    width: 13px;
+    overflow: hidden;
+    background: url('img/page_spr_icons.png') no-repeat -144px -96px;
+}
+
+#edit_name {
+    color: #AAAAAA;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#toolTop .dn {
+    display: none;
+}
+
+#keyboardshow {
+    position: relative;
+}
+
+#keyboard {
+    background: url(img/ico-shortcut-key.gif) 0 0 no-repeat;
+    width: 30px;
+    height: 16px;
+    display: inline-block;
+    margin: 8px 10px 0 0;
+}
+
+#imgKeyBoard {
+    position: absolute;
+    z-index: 100;
+    right: 10px;
+    top: 24px;
+    display: none;
+}
+
+
+
+
+
+/*凭证管理样式*/
+
+
+
+.page-block{
+    box-sizing: border-box;
+    position: fixed;
+    left: 1px;
+    right: 1px;
+    bottom: 0;
+    height: 50px;
+    color: #555;
+}
+
+.page-block > div{
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    height: 50px;
+    width: 580px;
+    padding: 7px 10px 0;
+    line-height: 34px;
+    background: #eaeaea;
+
+}
+/*.page-block > div:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    border-color: #AAA transparent transparent;
+    border-style: solid;
+    border-width: 7px;
+}*/
+
+.page-block > div > div{
+    float: right;
+}
+
+.page-block  select{
+    margin: 0;
+}
+
+.page-block strong{
+    color: #333;
+}
+
+
+
+
+
+/*.portlet.box .portlet-body.voucher-manage-wrap {*/
+    /*box-sizing: border-box;*/
+    /*position: relative;*/
+    /*overflow: hidden;*/
+    /*padding-top: 100px;*/
+    /*padding-bottom: 50px;*/
+/*}*/
+
+
+
+.cond-block {
+    box-sizing: border-box;
+    left: 10px;
+    position: fixed;
+    right: 10px;
+    top: 76px;
+}
+
+
+.close-label {
+    background: #d84a38;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: -13px;
+    width: 24px;
+}
+
+.cond-block .main{
+    padding:10px;
+    background: #fff;
+    border:2px solid #d84a38;
+    overflow:hidden;
+}
+
+.view,.add{
+    box-sizing:border-box;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+
+
+.add{
+    border:1px solid  #cdcdcd ;
+}
+.add legend{
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+.add .help-block{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.icon-cond{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 5px;
+}
+
+.icon-cond.and{
+    color: #ae474d;
+}
+.icon-cond.or{
+    color: #629434;
+}
+.view{
+    color: #555;
+}
+.view ul{
+    list-style: none;
+}
+.view li{
+    display: inline-block;
+    background: #D5D5D5;
+    position: relative;
+    padding: 0px 8px 0px 3px;
+    margin: 3px 0;
+
+}
+.view li .icon-remove{
+    color: #d84a38;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+}
+
+.add .form-actions {
+    background-color: #f5f5f5;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    padding: 12px 20px 0;
+}
+
+.add form{
+    margin: 0;
+}
+
+
+/*明细表样式*/
+.voucher-detail td{
+    font-size: 12px;
+}
+.voucher-detail th,.voucher-detail td{
+    text-align: center;
+    vertical-align: middle;
+    width: 65px;
+    min-width: 65px;
+}
+
+.voucher-detail td.summary,
+.voucher-detail td.address{
+    text-align: left;
+    min-width: 120px;
+    width: 120px;
+    line-height: 16px;
+}
+
+.voucher-detail td.subject{
+    text-align: left;
+    min-width: 150px;
+    width: 150px;
+}
+
+.crowded.table td{
+    padding: 2px 8px;
+    line-height: 18px;
+}
+
+
+
+
+
+@media screen and (max-width: 1234px) {
+    /*.AddVoucher_cerate {width: 770px; margin: 0 auto;} */
+}
+
+@media screen and (min-width: 1235px) {
+
+    .ViewVoucher {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .col_summary {
+        width: 223px;
+    }
+}
+
+
+/*凭证录入结束*/
+
+
+.debtBalanceTip, .debtBalanceTip:hover {
+    /* position: absolute; */
+    /* left: 240px; */
+    /* bottom: -2px; */
+    width: 75px;
+    padding: 0px 5px;
+    /* border-radius: 5px; */
+    height: 33px;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 25px;
+    text-align: center;
+    /* text-decoration: underline; */
+    cursor: pointer;
+    background: url(img/full.png) no-repeat;
+    display: none;
+}
+
+/*凭证管理 表头浮动*/
+.col-voucher-check {
+    min-width: 31px;
+    width: 31px;
+}
+
+.col-voucher-date {
+    min-width: 90px;
+    width: 90px;
+}
+
+.col-voucher-no {
+    min-width: 80px;
+    width: 80px;
+}
+
+.col-voucher-summary {
+    width: 15%;
+    min-width: 100px;
+}
+
+.col-voucher-subject {
+    width: 35%;
+    min-width: 100px;
+}
+
+.col-voucher-debit {
+    min-width: 100px;
+    width: 100px;
+}
+
+.col-voucher-credit {
+    min-width: 100px;
+    width: 100px;
+}
+
+.col-voucher-creator {
+    min-width: 80px;
+    max-width: 80px;
+}
+
+.col-voucher-approve {
+    min-width: 80px;
+    max-width: 80px;
+}
+
+.voucher-zhuangtai {
+    position: absolute;
+    height: 20px;
+    left: 30%;
+}
+
+.voucher-zhuangtai .yjz {
+    width: 75px;
+    height: 37px;
+    display: block;
+    background: url(img/vou-yjz.png) no-repeat;
+    background-size: 75px auto;
+    position: absolute;
+    margin-top: -3px;
+}
+
+
+
+
+.keyboard {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.col_option .option .selSub, .col_option .option .selSummary, .col_option .option .balance {
+    width: 35px;
+}
+
+.col_option .option {
+    margin-right: 10px;
+}
+
+.col_summary input {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+
+
+
+/*头部宽度*/
+.voucher .money_unit {
+    width: 182px;
+}
+/*金额宽度*/
+.voucher .col_total {
+    text-align: left;
+}
+
+
+
+.input_plus {
+    position: absolute;
+    min-height: 50px;
+    top: -1px; /* left: -1px; */
+    width: 100%; /* height: 100%; */
+    background: #FFFFFF;
+    z-index: 999;
+    border: 1px solid #CDCDCD  ; /* padding-top: 4px; */ /* box-shadow: 0px 0px 3px 3px #e3e3e3; */
+}
+
+.input_plus .input_km {
+    height: 49px;
+    border: 1px solid #00B2FF  ;
+}
+
+.input_plus .input_km input {
+    height: 45px; /* line-height: 45px; */
+    float: left; /* margin-left: 5px; */
+    width: 85%;
+    border: none;
+}
+
+.input_plus .input_km a {
+    line-height: 45px;
+    width: 40px; /* color: #545454; */
+    display: inline-block;
+    cursor: pointer; /* background: #00BE67; */ /* padding: 10px 5px; */ /* border-radius: 3px; */
+}
+
+.input_plus .input_km a:hover {
+    text-decoration: none;
+}
+
+.input_plus ul {
+    list-style: none;
+}
+
+.input_plus .xx_ts {
+    width: 100%;
+    display: none; /* background: #DDDDE8; */ /* border: 2px solid #ddd; */
+}
+
+.xx_ts #first_ul { /* margin-left: 0px; */ /* text-align: left; */
+}
+
+.xx_ts #first_ul span + span {
+    margin-left: 45px;
+}
+
+.xx_ts #first_ul > li {
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.xx_ts #first_ul > li:hover {
+    background-color: #f2f2f2;
+}
+
+.ul_2 {
+    height: 124px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.ul_2 ul {
+    margin-left: 0;
+}
+
+.ul_2 li {
+    padding: 5px 5px 5px 20px;
+    cursor: pointer;
+}
+
+.ul_2 li:hover {
+    background-color: #f2f2f2;
+}
+
+.xx_ts .xz_km {
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    background-color: #4890da;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/*按钮定位*/
+.col_summary {
+    position: relative; /* width: 180px; */
+}
+
+.col_credit {
+    position: relative;
+}
+
+.JH {
+    width: 20px;
+    height: 20px;
+    display: block;
+    line-height: 20px;
+    border-radius: 100%;
+    color: #999;
+    font-size: 20px;
+    position: absolute;
+    top: -3px;
+    left: -30px;
+    display: none;
+}
+
+.PH {
+    width: 20px;
+    height: 20px;
+    display: block;
+    line-height: 20px;
+    border-radius: 100%;
+    color: #4a8fda;
+    font-size: 20px;
+    position: absolute;
+    top: -3px;
+    right: -30px;
+    display: none;
+}
+/*交互样式*/
+
+/*凭证录入等样式*/
+
+.mod-toolbar-top {
+    padding-right: 0;
+}
+
+#toolBottom {
+    padding-bottom: 0;
+}
+
+.ui-combo-wrap .input-txt, .ui-droplist-wrap .list-item {
+    font-size: 12px;
+}
+
+.ui-datepicker-input {
+    font-size: 12px;
+}
+/*voucher_wrap*/
+#toolTop {
+    border-bottom: 0;
+}
+
+.voucher .st-summary {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/*.voucher_wrap { margin-left: 18px; padding: 15px 45px; width: 1048px; border: 1px solid #cfcfcf; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.2); position: relative; }*/
+.voucher_tit {
+    display: inline;
+    margin-right: 20px;
+    font: 28px/1.8 "Microsoft Yahei";
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.voucher_top {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.voucher_top .date_wrap {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.voucher_top .mark_wrap, .voucher_top .tit_wrap {
+    float: left;
+}
+
+.voucher_top .mark_wrap .txt {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.voucher_top .tit_wrap {
+    margin: -20px 0 0 110px;
+}
+
+.voucher_top .attach_wrap {
+    float: right;
+}
+
+.voucher_top .attach_wrap .ui-input {
+    width: 25px;
+}
+
+#vch_mark, #skip-mark-select {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+
+.voucher th, .voucher td { /* border: 1px solid #666; */
+}
+
+.voucher thead th {
+    border-top-width: 2px;
+}
+
+.voucher th.no-borderl,
+.voucher td.no-borderl{
+    border-left:0;
+}
+
+.voucher tfoot td {
+    border-bottom-width: 2px;
+}
+
+.voucher .col_summary, .voucher .col_total {
+    border-left-width: 2px;
+}
+
+.voucher .col_credit { /* border-right-width:2px; */
+}
+
+.col_quantity, .col_currency {
+    display: none;
+}
+
+/*.voucher td.col_debite, .voucher td.col_credit, .voucher td.col_money, .money_unit {
+    background-image: url(../image/money_rp.png);
+    background-repeat: repeat-y;
+}*/
+
+
+
+/*.voucher .col_money .tit {*/
+
+
+.voucher .money_unit,
+.voucher .func_unit{
+    height: 22px;
+    line-height: 22px;
+    font-weight: normal;
+    border-top: 1px solid #dadada;
+    text-align: center;
+}
+
+.voucher .money_unit span {
+    float: left;
+    text-align: center;
+    display: block;
+    width: 16.3px;
+    height: 100%;
+}
+
+.voucher .money_unit .last {
+    margin-right: -5px; /* width:18px; */
+}
+
+.add .cond-wrap dd{
+    display: inline-block;
+}
+
+
+.table-page {
+    padding: 10px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+

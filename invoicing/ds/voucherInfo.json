@@ -1,0 +1,17 @@
+{
+    "workInfo": [
+    	{"key":"11","value":"DR"},
+		{"key":"12","value":"DG"},
+		{"key":"13","value":"KR"},
+		{"key":"14","value":"KZ"},
+		{"key":"15","value":"RE"},
+		{"key":"16","value":"RV"},
+		{"key":"17","value":"AC"},
+		{"key":"18","value":"CC"},
+		{"key":"19","value":"CR"},
+		{"key":"20","value":"SA"},
+		{"key":"21","value":"AD"}
+    ],
+    "errorCode": 0,
+    "errorMsg": null
+}

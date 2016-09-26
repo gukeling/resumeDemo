@@ -1,0 +1,328 @@
+@charset "UTF-8";
+/*公用首页样式*/
+
+.index-content{
+	overflow: hidden;
+	padding-top: 80px;
+}
+
+.index-content dd{
+	margin-left: 0;
+}
+
+.index-content *::-moz-selection {
+	background: #5f8295 none repeat scroll 0 0;
+	color: #ffffff;
+	text-shadow: none;
+}
+
+.index-content > div:nth-of-type(2){
+	text-align: center;
+}
+
+.cwgl .half{
+	display: inline-block;
+	width: 350px;
+}
+
+.kjzx-div3 > i {
+	margin: 0 20px;
+}
+
+.cwgl .half.left{
+	margin-right: 20px;
+}
+
+dl.cwgl{
+	overflow: hidden;
+	margin: 0 auto;
+	display: inline-block;
+	padding-top: 30px;
+	border-top: 2px dashed #DEDEDE;
+}
+.index-content *{
+	box-sizing: border-box;
+}
+.index-content .left,
+.index-content .right{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.index-content .left{
+	float: left;
+}
+
+.index-content .right{
+	float: right;
+}
+
+.index-content {} .index-content dl {
+	/* min-height: 140px; */
+}
+.index-content dt {
+	background: #f2f2f2;
+	padding: 10px;
+}
+.index-content dd {} 
+
+
+.index-content dl.swzx a {
+    margin-left: 10px !important;
+
+
+}
+.index-content dl.cwgl a:hover {
+	background: none;
+}
+.index-content dl.kjzx a {
+    margin-bottom: 0px;
+    margin-top: 16px;
+	padding: 0 20px;
+
+	border-radius: 5px !important;
+    /* line-height: 30px; */
+} 
+.index-content dl.cwgl a {
+	width: 100%;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+	height: 30px;
+}
+.index-content h5 {
+	height: 20px;
+	border-top: 2px solid #1A7EE3;
+	line-height: 20px;
+	margin: 10px;
+	padding-top: 5px;
+	color: #1A7EE3;
+	display: inline-block;
+}
+.fa-stack {
+	position: relative;
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	vertical-align: middle;
+}
+.cwgl-div {
+	overflow: hidden;
+	text-align: left;
+	padding: 0px;
+	border: 1px solid #EFEFEF;
+	margin: 0px 0px 5px 0px;
+	width: 100%;
+	display: inline-block;
+	cursor: pointer;
+	/* min-height: 150px; */
+	-moz-transition: background-color 200ms linear;
+	-o-transition: background-color 200ms linear;
+	-webkit-transition: background-color 200ms linear;
+	transition: background-color 200ms linear;
+	
+}
+
+
+.color-1:hover h5,
+.color-2:hover h5,
+.color-3:hover h5,
+.color-4:hover h5 {
+	color: #ffffff;
+	border-top: 2px solid #ffffff;
+}
+.color-1:hover a,
+.color-2:hover a,
+.color-3:hover a,
+.color-4:hover a {
+	color: #ffffff;
+}
+.color-1:hover {
+	background: #FFB752;
+	color: #ffffff;
+}
+.color-2:hover {
+	background: #67B0E0;
+	color: #ffffff;
+}
+.color-3:hover {
+	background: #54C29D;
+	color: #ffffff;
+}
+.color-4:hover {
+	background: #F9604B;
+	color: #ffffff;
+}
+
+.color-1:hover {
+	background: #FFB752;
+	color: #ffffff;
+}
+
+.color-2:hover {
+	background: #67B0E0;
+	color: #ffffff;
+}
+
+.color-3:hover {
+	background: #54C29D;
+	color: #ffffff;
+}
+.color-4:hover {
+	background: #F9604B;
+	color: #ffffff;
+}
+.right-buts{ width:100%; overflow: auto;}
+.right-buts a{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+.right-buts:first-child a{float: left;}
+.right-buts: a{
+    float: right;
+}
+.right-buts a:hover{ background: #0B75E1; color: #ffffff;-moz-transition: background-color 200ms linear;
+	-o-transition: background-color 200ms linear;
+	-webkit-transition: background-color 200ms linear;
+	transition: background-color 200ms linear;}
+
+.cwgl ul{margin-bottom:0px;}
+.cwgl-icon{ width: 120px; height: 110px; background: url(../image/index.svg) no-repeat; background-size: 800px; margin-top: 10px;}
+.cwgl .ico-a{background-position:0px 0px ;}
+.cwgl .ico-b{background-position: -123px 0px;}
+.cwgl .ico-c{background-position: -245px 0px;}
+.cwgl .ico-d{background-position: -370px 0px;}
+.margin-top-20{ margin-top:20px ;}
+
+.kjzx-icon{width: 30px; height: 35px; display: inline-block; vertical-align: middle;font-size: 30px;margin-left: -10px;margin-right: 10px;}
+
+.kjzx .icon-1::before{
+    content: "\00d8";
+}
+.kjzx .icon-2::before{
+    content: "\2000";
+}
+.kjzx .icon-3::before{
+    content: "\2001";
+}
+.kjzx .icon-4::before{
+    content: "\f013";
+}
+.kjzx .icon-5::before{
+    content: "\f013";
+}
+
+.index-btn-3 .ico-6,.index-btn-3 .ico-7,.index-btn-3 .ico-8,.index-btn-3 .jiantou{
+	width: 100px;
+	height: 50px;
+	display: inline-block;
+	background: url(../image/index.svg);
+	background-position:0px -240px;
+	background-size: 850px;
+}
+.index-btn-3 .ico-6{	background-position:0px -240px;}
+.index-btn-3 .ico-7{	background-position:-130px -240px;}
+.index-btn-3 .ico-8{	background-position:-270px -240px;}
+.index-btn-3 .jiantou{	background-position:0px -315px;width: 200px;	height: 85px;	filter: alpha(opacity=40);      	-moz-opacity: 0.4;      	-khtml-opacity: 0.4;      	opacity: 0.4;}
+
+.kjzx .kjzx-div1{ text-align: center; /* height: 60px; */}
+.kjzx .kjzx-div2{text-align: center; height: 60px;}
+.kjzx .kjzx-div3{text-align: center; padding-top: 15px;}
+
+
+
+.swzx{ height:100px;}
+.index-btn-1 a i{font-size:24px;vertical-align: middle;}
+
+.index-btn-1 a:hover i{color: #ffffff;}
+.index-btn-1 a {
+	display: inline-block;
+	padding:5px 13px;
+	min-height: 40px;
+	margin: 10px;
+	line-height: 40px;
+	color: #3A3A3A;
+	font-size: 16px;
+	border-radius: 5px;
+	text-decoration: blink;
+	text-align: center;
+}
+.index-btn-1 a:hover {
+	 background: rgba(40, 139, 231, 0.8); color: #ffffff;-moz-transition: background-color 200ms linear;
+	-o-transition: background-color 200ms linear;
+	-webkit-transition: background-color 200ms linear;
+	transition: background-color 200ms linear;
+}
+.index-btn-2 a{padding: 5px 30px;}
+
+.lxwm{ text-align: right;}
+.lxwm i{ font-size:20px;}
+.lxwm a{  color: #474747;}
+
+.cwgl{ margin-bottom: 20px;}
+/*首页优惠券*/
+.index-coupons{ min-width: 280px;}
+.index-coupons .able,.index-coupons .disabled{
+    background: url(../image/coupons-in.png) right;
+    display: block;
+    height: 60px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.index-coupons a h2{
+    display: inline-block;
+    margin-left: 10px;
+    float: left;
+    font-weight: bold;
+    width: 93px;
+    height: 60px;
+    margin: 0px;
+    font-size: 30px;
+    text-align: center;
+    background: url(../image/coupons-in.png) left;
+    padding-top: 10px;
+}
+.index-coupons a h2 span{
+    font-size: 16px;
+}
+.index-coupons a.able h2{background-position: left 0px;}
+.index-coupons a.disabled h2{  background-position: left -70px;}
+.index-coupons a p{
+    display: inline-block;
+    margin-top: 10px;
+    height: 20px;
+    /* padding-left: 20px; */
+    margin-bottom: 0px;
+}
+.index-coupons a h5{
+    display: inline-block;
+    color: #ffffff;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+.index-coupons .able{
+    background-position: right 0px;
+}
+.index-coupons .disabled{  background-position: right -70px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

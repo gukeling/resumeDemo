@@ -1,0 +1,164 @@
+<div>
+
+    <div id="condList" class="fl_search clearfix">
+        <span class="inline"><label class="control-label">订单编号:</label><input type="text" data-op="eq" data-rqs="orderId" name="orderId" placeholder="请输入订单编号"></span><span class="inline"><label>楼盘:</label><input type="text" data-rqs="village" data-op="cn" autocomplete="off" name="village" placeholder="请输入楼盘"></span><span class="inline"><label>楼号:</label><input type="text" data-op="cn" data-rqs="houseNumber" name="houseNumber" placeholder="请输入楼号"></span><span class="inline"><label>面积:</label><input type="text" data-op="eq" data-rqs="houseArea" name="houseArea" placeholder="请输入面积"></span><span class="inline"><label>客户电话:</label><input type="text" data-op="cn" data-rqs="customerPhone" name="customerPhone" placeholder="请输入客户电话"></span><span class="inline"><label>设计师:</label><input type="text" data-rqs="designer" data-op="cn" autocomplete="off" name="designer" placeholder="请输入设计师"><ul style="top: 40px; left: 965.2px; display: none;" class="typeahead dropdown-menu"><li class="active" data-value="白雪峰"><a href="#">白雪峰</a></li></ul></span><span class="inline"><label>业务员:</label><input type="text" data-rqs="salesman" data-op="cn" autocomplete="off" name="salesman" placeholder="请输入业务员"></span><span class="inline"><label>设计中心:</label><select data-op="eq" data-rqs="designerRegionId" name="designerRegionId"><option value="">全部</option><option value="FL_DR_01">设计一分区</option><option value="FL_DR_02">设计二分区</option><option value="FL_DR_03">设计三分区</option><option value="FL_DR_04">设计四分区</option><option value="FL_DR_05">外阜分区</option><option value="FL_DR_06">其他大区</option><option value="FL_DR_07">1918别墅装饰</option><option value="FL_DR_08">宜家装饰</option><option value="FL_DR_09">工装公司</option><option value="FL_DR_10">大东独立运营分区</option></select></span><span class="inline"><label>设计部:</label><select data-op="eq" data-rqs="designerDepartmentId" name="designerDepartmentId"><option value="">全部</option><option value="FL_DD_01">大东分公司</option><option value="FL_DD_02">设计中心四部</option><option value="FL_DD_03">设计中心九部</option><option value="FL_DD_04">设计中心十部</option><option value="FL_DD_05">浑南分公司</option><option value="FL_DD_06">铁西分公司</option><option value="FL_DD_07">设计中心一部</option><option value="FL_DD_08">设计中心五部</option><option value="FL_DD_09">设计中心精品一部</option><option value="FL_DD_10">设计中心二部</option><option value="FL_DD_11">设计中心六部</option><option value="FL_DD_12">设计中心十一部</option><option value="FL_DD_13">设计中心十二部</option><option value="FL_DD_14">设计中心精品二部</option><option value="FL_DD_15">设计中心三部</option><option value="FL_DD_16">设计中心七部</option><option value="FL_DD_17">设计中心八部</option><option value="FL_DD_18">宏发分公司</option><option value="FL_DD_19">抚顺分公司</option><option value="FL_DD_20">阜新分公司</option><option value="FL_DD_21">盘锦分公司</option><option value="FL_DD_22">本溪分公司</option><option value="FL_DD_23">设计中心十三部</option><option value="FL_DD_24">设计中心十五部</option><option value="FL_DD_25">设计中心十六部</option><option value="FL_DD_26">其他地区设计师</option><option value="FL_DD_27">宜家设计一部</option><option value="FL_DD_28">公司</option><option value="FL_DD_29">宜家设计二部</option><option value="FL_DD_30">宜家设计三部</option><option value="FL_DD_31">工装设计部</option><option value="FL_DD_32">1918大宅设计一部</option><option value="FL_DD_33">1918大宅设计二部</option><option value="FL_DD_34">1918大宅设计三部</option><option value="FL_DD_35">宜家设计六部</option><option value="FL_DD_36">丹东分公司</option></select></span><span class="inline"><label>业务中心:</label><select data-op="eq" data-rqs="salesmanRegionId" name="salesmanRegionId"><option value="">全部</option><option value="FL_BR_01">市场营销一分区</option><option value="FL_BR_02">市场营销二分区</option><option value="FL_BR_03">电子商务中心</option><option value="FL_BR_04">外阜市场分区</option><option value="FL_BR_08">公共分区</option><option value="FL_BR_09">1918别墅装饰</option><option value="FL_BR_10">宜家装饰市场中心</option></select></span><span class="inline"><label>业务部:</label><select data-op="eq" data-rqs="salesmanDepartmentId" name="salesmanDepartmentId"><option value="">全部</option><option value="FL_BD_01">市场营销一部</option><option value="FL_BD_02">市场营销二部</option><option value="FL_BD_03">市场营销三部</option><option value="FL_BD_04">市场营销四部</option><option value="FL_BD_05">市场营销五部</option><option value="FL_BD_06">市场营销六部</option><option value="FL_BD_07">抚顺市场部一组</option><option value="FL_BD_08">抚顺市场部二组</option><option value="FL_BD_09">阜新市场部</option><option value="FL_BD_10">本溪市场部</option><option value="FL_BD_11">市场营销七部</option><option value="FL_BD_12">市场营销八部</option><option value="FL_BD_13">网络营销部</option><option value="FL_BD_14">抚顺网销部</option><option value="FL_BD_15">阜新网销部</option><option value="FL_BD_16">本溪网销部</option><option value="FL_BD_17">盘锦网销部</option><option value="FL_BD_18">盘锦市场部</option><option value="FL_BD_19">抚顺市场部</option><option value="FL_BD_20">公共部</option><option value="FL_BD_21">前台咨询部</option><option value="FL_BD_22">网站运营部</option><option value="FL_BD_23">客户服务部</option><option value="FL_BD_24">渠道部</option><option value="FL_BD_25">宜家市场三组</option><option value="FL_BD_26">宜家市场二组</option><option value="FL_BD_27">宜家市场一组</option><option value="FL_BD_28">宜家网销部</option><option value="FL_BD_29">1918电话销售部</option><option value="FL_BD_30">电商运营部</option><option value="FL_BD_31">网销一部</option><option value="FL_BD_32">网销二部</option><option value="FL_BD_33">外联部</option><option value="FL_BD_34">1918别墅网络部</option><option value="FL_BD_35">大东市场部</option><option value="FL_BD_36">丹东市场部</option><option value="FL_BD_37">丹东网销部</option><option value="FL_BR_01">市场营销一分区</option><option value="FL_BR_02">市场营销二分区</option><option value="FL_BR_03">电子商务中心</option><option value="FL_BR_04">外阜市场分区</option><option value="FL_BR_08">公共分区</option><option value="FL_BR_09">1918别墅装饰</option><option value="FL_BR_10">宜家装饰市场中心</option><option value="FL_DD_01">大东分公司</option><option value="FL_DD_02">设计中心四部</option><option value="FL_DD_03">设计中心九部</option><option value="FL_DD_04">设计中心十部</option><option value="FL_DD_05">浑南分公司</option><option value="FL_DD_06">铁西分公司</option><option value="FL_DD_07">设计中心一部</option><option value="FL_DD_08">设计中心五部</option><option value="FL_DD_09">设计中心精品一部</option><option value="FL_DD_10">设计中心二部</option><option value="FL_DD_11">设计中心六部</option><option value="FL_DD_12">设计中心十一部</option><option value="FL_DD_13">设计中心十二部</option><option value="FL_DD_14">设计中心精品二部</option><option value="FL_DD_15">设计中心三部</option><option value="FL_DD_16">设计中心七部</option><option value="FL_DD_17">设计中心八部</option><option value="FL_DD_18">宏发分公司</option><option value="FL_DD_19">抚顺分公司</option><option value="FL_DD_20">阜新分公司</option><option value="FL_DD_21">盘锦分公司</option><option value="FL_DD_22">本溪分公司</option><option value="FL_DD_23">设计中心十三部</option><option value="FL_DD_24">设计中心十五部</option><option value="FL_DD_25">设计中心十六部</option><option value="FL_DD_26">其他地区设计师</option><option value="FL_DD_27">宜家设计一部</option><option value="FL_DD_28">公司</option><option value="FL_DD_29">宜家设计二部</option><option value="FL_DD_30">宜家设计三部</option><option value="FL_DD_31">工装设计部</option><option value="FL_DD_32">1918大宅设计一部</option><option value="FL_DD_33">1918大宅设计二部</option><option value="FL_DD_34">1918大宅设计三部</option><option value="FL_DD_35">宜家设计六部</option><option value="FL_DD_36">丹东分公司</option><option value="FL_DR_01">设计一分区</option><option value="FL_DR_02">设计二分区</option><option value="FL_DR_03">设计三分区</option><option value="FL_DR_04">设计四分区</option><option value="FL_DR_05">外阜分区</option><option value="FL_DR_06">其他大区</option><option value="FL_DR_07">1918别墅装饰</option><option value="FL_DR_08">宜家装饰</option><option value="FL_DR_09">工装公司</option><option value="FL_DR_10">大东独立运营分区</option><option value="FL_ED_01">放线部</option><option value="FL_ED_02">铲大白/地面找平部</option><option value="FL_ED_03">水力电部</option><option value="FL_ED_04">瓦工部</option><option value="FL_ED_05">木工部</option><option value="FL_ED_06">油工部</option><option value="FL_ED_07">保洁部</option><option value="FL_ED_08">巡检部</option><option value="FL_ED_09">监理部</option><option value="FL_ED_14">地面找平部</option><option value="FL_ED_15">工程中心</option><option value="FL_ED_16">宜家监理部</option><option value="FL_ED_17">1918别墅监理部</option><option value="FL_MD_01">主材中心一组</option><option value="FL_MD_02">主材中心二组</option><option value="FL_MD_03">主材中心三组</option><option value="FL_MD_04">主材中心四组</option><option value="FL_MD_05">主材中心五组</option><option value="FL_MD_06">主材中心六组</option><option value="FL_MD_07">驻店导购部</option><option value="FL_MD_08">正林木门板式</option><option value="FL_MD_09">正林橱柜</option><option value="FL_MD_10">主材核算部</option><option value="FL_MD_11">主材客服部</option><option value="FL_MD_12">盘锦主材部</option><option value="FL_MD_13">本溪主材部</option><option value="FL_MD_14">阜新主材部</option><option value="FL_MD_15">正林理石</option><option value="FL_MD_16">主材营销部</option><option value="FL_MD_17">抚顺主材部</option><option value="FL_MD_18">1918主材部</option><option value="FL_ZD_01">总经办</option><option value="FL_ZD_02">财务中心</option><option value="FL_ZD_03">前台咨询部</option><option value="FL_ZD_04">前台接待部</option><option value="FL_ZD_05">预算审核部</option><option value="FL_ZD_06">合约审核部</option><option value="FL_ZD_07">客户服务部</option><option value="FL_ZD_08">人力资源部</option><option value="FL_ZD_09">ERP开发部</option><option value="FL_ZD_10">库房</option><option value="FL_ZD_11">企划部</option><option value="FL_ZD_12">后勤部</option><option value="FL_ZD_13">上门</option><option value="FL_ZD_14">宜家前台咨询部</option><option value="FL_ZD_15">电商策划部</option><option value="FL_ZD_16">行政部</option><option value="FL_ZD_17">1918前台咨询</option><option value="FL_ZD_18">1918企划营销部</option><option value="FL_ZD_19">1918后勤保洁部</option><option value="FL_ZD_20">1918财务部</option></select></span><span class="inline"><label>量尺时间:</label><input type="text" data-rqs="createTimeDateRange" data-op="cn" name="createTimeDateRange" placeholder="请输入量尺时间"></span><span class="inline"><label>签单时间:</label><input type="text" data-rqs="signTimeDateRange" data-op="cn" name="signTimeDateRange" placeholder="请输入签单时间"></span><span class="inline"><label>房屋类型:</label><select data-op="eq" data-rqs="houseClass" name="houseClass"><option value="">全部</option><option value="清水">清水</option><option value="二手">二手</option><option value="别墅">别墅</option><option value="阁楼">阁楼</option><option value="地下">地下</option></select></span><span class="inline"><label>状态:</label><select data-op="eq" data-rqs="status" name="status"><option value="">全部</option><option value="咨询">咨询</option><option value="量房">量房</option><option value="已报价">已报价</option><option value="定金">定金</option><option value="重签合同">重签合同</option><option value="已签约">已签约</option><option value="废单">废单</option><option value="已完工">已完工</option><option value="合同终止">合同终止</option></select></span><button class="btn blue small btn-search">查询</button><button style="margin: 0px 3px;" class="btn small red btn-clean">重置</button></div>
+
+
+    <div class="clearfix" id="resultList">
+
+        <div class="search-classic clearfix">
+
+            <h4><a href="javascript:void(0)">1608300003</a></h4>
+
+            <!--<a href="javascript:void(0)">http://www.keenthemes.com</a>-->
+
+            <ul class="list-unstyled fl-inline-list clearfix">
+                <li><strong>楼盘地址:</strong><b class="color-grey">鑫丰雍景豪城 15#2-14-3</b></li>
+                <li><strong>客户名:</strong><b class="color-grey">刘文伟</b></li>
+                <li><strong>余额:</strong><b class="color-blue">1000</b></li>
+                <li><strong>设计部:</strong><b class="color-grey">设计中心十部</b></li>
+                <li><strong>设计师:</strong><b class="color-grey">白雪峰</b></li>
+                <li><strong>业务部:</strong><b class="color-grey">设计中心十部</b></li>
+                <li><strong>业务员:</strong><b class="color-grey">白雪峰</b></li>
+                <li><strong>面积:</strong><b class="color-blue">86</b></li>
+                <li><strong>合同报价:</strong><b class="color-grey">50000</b></li>
+                <li><strong>量房时间:</strong><b class="color-grey">2016-08-30</b></li>
+                <li><strong>签单时间:</strong><b class="color-grey"></b></li>
+                <li><strong>状态:</strong><b class="color-red">定金</b></li>
+            </ul>
+
+            <div>
+                <a class="btn mini red">查看</a>
+                <a class="btn mini green">回访</a>
+                <a class="btn mini blue">放线</a>
+                <a class="btn mini black">报价</a>
+                <a class="btn mini purple">合同</a>
+            </div>
+
+        </div>
+
+        <div class="search-classic clearfix">
+
+            <h4><a href="javascript:void(0)">1608300003</a></h4>
+
+            <!--<a href="javascript:void(0)">http://www.keenthemes.com</a>-->
+
+            <ul class="list-unstyled fl-inline-list clearfix">
+                <li><strong>楼盘地址:</strong><b class="color-grey">鑫丰雍景豪城 15#2-14-3</b></li>
+                <li><strong>客户名:</strong><b class="color-grey">刘文伟</b></li>
+                <li><strong>余额:</strong><b class="color-blue">1000</b></li>
+                <li><strong>设计部:</strong><b class="color-grey">设计中心十部</b></li>
+                <li><strong>设计师:</strong><b class="color-grey">白雪峰</b></li>
+                <li><strong>业务部:</strong><b class="color-grey">设计中心十部</b></li>
+                <li><strong>业务员:</strong><b class="color-grey">白雪峰</b></li>
+                <li><strong>面积:</strong><b class="color-blue">86</b></li>
+                <li><strong>合同报价:</strong><b class="color-grey">50000</b></li>
+                <li><strong>量房时间:</strong><b class="color-grey">2016-08-30</b></li>
+                <li><strong>签单时间:</strong><b class="color-grey"></b></li>
+                <li><strong>状态:</strong><b class="color-red">定金</b></li>
+            </ul>
+
+            <div>
+                <a class="btn mini red">查看</a>
+                <a class="btn mini green">回访</a>
+                <a class="btn mini blue">放线</a>
+                <a class="btn mini black">报价</a>
+                <a class="btn mini purple">合同</a>
+            </div>
+
+        </div>
+
+        <div class="search-classic clearfix">
+
+            <h4><a href="javascript:void(0)">1608300003</a></h4>
+
+            <!--<a href="javascript:void(0)">http://www.keenthemes.com</a>-->
+
+            <ul class="list-unstyled fl-inline-list clearfix">
+                <li><strong>楼盘地址:</strong><b class="color-grey">鑫丰雍景豪城 15#2-14-3</b></li>
+                <li><strong>客户名:</strong><b class="color-grey">刘文伟</b></li>
+                <li><strong>余额:</strong><b class="color-blue">1000</b></li>
+                <li><strong>设计部:</strong><b class="color-grey">设计中心十部</b></li>
+                <li><strong>设计师:</strong><b class="color-grey">白雪峰</b></li>
+                <li><strong>业务部:</strong><b class="color-grey">设计中心十部</b></li>
+                <li><strong>业务员:</strong><b class="color-grey">白雪峰</b></li>
+                <li><strong>面积:</strong><b class="color-blue">86</b></li>
+                <li><strong>合同报价:</strong><b class="color-grey">50000</b></li>
+                <li><strong>量房时间:</strong><b class="color-grey">2016-08-30</b></li>
+                <li><strong>签单时间:</strong><b class="color-grey"></b></li>
+                <li><strong>状态:</strong><b class="color-red">定金</b></li>
+            </ul>
+
+            <div>
+                <a class="btn mini red">查看</a>
+                <a class="btn mini green">回访</a>
+                <a class="btn mini blue">放线</a>
+                <a class="btn mini black">报价</a>
+                <a class="btn mini purple">合同</a>
+            </div>
+
+        </div>
+
+        <div class="search-classic clearfix">
+
+            <h4><a href="javascript:void(0)">1608300003</a></h4>
+
+            <!--<a href="javascript:void(0)">http://www.keenthemes.com</a>-->
+
+            <ul class="list-unstyled fl-inline-list clearfix">
+                <li><strong>楼盘地址:</strong><b class="color-grey">鑫丰雍景豪城 15#2-14-3</b></li>
+                <li><strong>客户名:</strong><b class="color-grey">刘文伟</b></li>
+                <li><strong>余额:</strong><b class="color-blue">1000</b></li>
+                <li><strong>设计部:</strong><b class="color-grey">设计中心十部</b></li>
+                <li><strong>设计师:</strong><b class="color-grey">白雪峰</b></li>
+                <li><strong>业务部:</strong><b class="color-grey">设计中心十部</b></li>
+                <li><strong>业务员:</strong><b class="color-grey">白雪峰</b></li>
+                <li><strong>面积:</strong><b class="color-blue">86</b></li>
+                <li><strong>合同报价:</strong><b class="color-grey">50000</b></li>
+                <li><strong>量房时间:</strong><b class="color-grey">2016-08-30</b></li>
+                <li><strong>签单时间:</strong><b class="color-grey"></b></li>
+                <li><strong>状态:</strong><b class="color-red">定金</b></li>
+            </ul>
+
+            <div>
+                <a class="btn mini red">查看</a>
+                <a class="btn mini green">回访</a>
+                <a class="btn mini blue">放线</a>
+                <a class="btn mini black">报价</a>
+                <a class="btn mini purple">合同</a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="fl-page-wrap clearfix pagination" id="pagenation" style="display: block;">
+        <a class="btn mini btn-success pull-left" name="import" style="margin: 0px 3px;"><i
+                class="icon-download-alt bigger-110"></i><span>导出</span></a>
+        <div class="pager-info text-center"><span>第</span><span class="bigger-120 blue"
+                                                                name="nowPage">1</span><span>页, 共</span><span
+                class="bigger-120 blue" name="totalPage">2</span><span>页, 每页显示</span><span
+                class="bigger-120 blue" name="rows">10</span><span>条, 共</span><span
+                class="bigger-120 blue" name="totalRecords">18</span><span>条, 前往</span><input
+                type="text" class="fl-page-input" style="font-size: 10px;"
+                id="pginput"><span>页, 条数</span><select class="fl-page-select">
+            <option value="10">10</option>
+            <option value="30">30</option>
+        </select>
+            <ul class="pull-right">
+                <li class="previous disabled" name="prev"><a href="javascript:void(0);">&lt; 上一页</a>
+                </li>
+                <li class="next" name="next"><a href="javascript:void(0);">下一页 &gt;</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $(function(){
+        $.getScript('js/demo/demo.js');
+    });
+</script>
